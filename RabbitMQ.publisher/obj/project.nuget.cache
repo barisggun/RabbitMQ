@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sKKor6hxVco61n6pjr3oztwQT+qJ+cxTqbU4MvPlYT6gqRafFvrsXyP02rN1C4mwwqlnYxomV/vWXJbb7Anq3g==",
+  "success": true,
+  "projectFilePath": "/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/RabbitMQ.publisher.csproj",
+  "expectedPackageFiles": [
+    "/Users/baris/.nuget/packages/rabbitmq.client/6.8.1/rabbitmq.client.6.8.1.nupkg.sha512",
+    "/Users/baris/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/baris/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

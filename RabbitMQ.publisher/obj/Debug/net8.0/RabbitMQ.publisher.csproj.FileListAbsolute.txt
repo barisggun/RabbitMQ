@@ -1,0 +1,17 @@
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/bin/Debug/net8.0/RabbitMQ.publisher
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/bin/Debug/net8.0/RabbitMQ.publisher.deps.json
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/bin/Debug/net8.0/RabbitMQ.publisher.runtimeconfig.json
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/bin/Debug/net8.0/RabbitMQ.publisher.dll
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/bin/Debug/net8.0/RabbitMQ.publisher.pdb
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/bin/Debug/net8.0/RabbitMQ.Client.dll
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.publisher.csproj.AssemblyReference.cache
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.publisher.GeneratedMSBuildEditorConfig.editorconfig
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.publisher.AssemblyInfoInputs.cache
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.publisher.AssemblyInfo.cs
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.publisher.csproj.CoreCompileInputs.cache
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.AF79D071.Up2Date
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.publisher.dll
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/refint/RabbitMQ.publisher.dll
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.publisher.pdb
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/RabbitMQ.publisher.genruntimeconfig.cache
+/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/obj/Debug/net8.0/ref/RabbitMQ.publisher.dll
