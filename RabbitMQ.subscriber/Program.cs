@@ -22,5 +22,5 @@ consumer.Received += (object AssemblyDependencyResolver, BasicDeliverEventArgs e
     var message = Encoding.UTF8.GetString(e.Body.ToArray());
     Console.WriteLine("Gelen mesaj: " + message);
 };
-
+//
 Console.ReadLine();
