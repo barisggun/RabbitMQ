@@ -20,7 +20,7 @@ var randomQueueName = channel.QueueDeclare().QueueName;
 channel.QueueBind(randomQueueName,"logs-fanout","",null);
 //uygulama down olduğunda kuyruk silinecek.
 
-
+//
 channel.BasicQos(0,1,false);
 
 var consumer = new EventingBasicConsumer(channel);
