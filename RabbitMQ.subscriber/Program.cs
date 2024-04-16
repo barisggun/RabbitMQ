@@ -16,11 +16,14 @@ var channel = connection.CreateModel();
 //Baştaki 0 herhangi bir boyutta dosyanın gönderilebileceğini söylüyor, 6 kaç tane mesaj gönderileceğini söylüyor, false veya true ise true yaparsak 6 mesaj varsa bunu 3-3- bölerek yollar.
 
 
-var randomQueueName = channel.QueueDeclare().QueueName;
+var randomQueueName = "log-database-save-queue"; //channel.QueueDeclare().QueueName;
+
+//kalıcı hale getirmek için, silinmemesi için
+channel.QueueDeclare(randomQueueName, true, false, false);
+
 channel.QueueBind(randomQueueName,"logs-fanout","",null);
 //uygulama down olduğunda kuyruk silinecek.
 
-//
 channel.BasicQos(0,1,false);
 
 var consumer = new EventingBasicConsumer(channel);

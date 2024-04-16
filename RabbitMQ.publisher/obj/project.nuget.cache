@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sKKor6hxVco61n6pjr3oztwQT+qJ+cxTqbU4MvPlYT6gqRafFvrsXyP02rN1C4mwwqlnYxomV/vWXJbb7Anq3g==",
+  "dgSpecHash": "y6P/wdpQCeHKW0cICgLiQIyE1BhFV+WPumeFGv0C56VeEaTNV4PG2ckIN5A7lE8lEPQlAaguahCFupvKHAYSQQ==",
   "success": true,
   "projectFilePath": "/Users/baris/RiderProjects/RabbitMQ/RabbitMQ.publisher/RabbitMQ.publisher.csproj",
   "expectedPackageFiles": [
