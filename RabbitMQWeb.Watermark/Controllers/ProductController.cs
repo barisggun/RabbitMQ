@@ -5,16 +5,19 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RabbitMQWeb.Watermark.Models;
+using RabbitMQWeb.Watermark.Services;
 
 namespace RabbitMQWeb.Watermark.Controllers
 {
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;
-
-        public ProductController(AppDbContext context)
+        private readonly RabbitMQPublisher _rabbitMqPublisher;
+        public ProductController(AppDbContext context,RabbitMQPublisher rabbitMqPublisher)
         {
+            _rabbitMqPublisher = rabbitMqPublisher;
             _context = context;
         }
 
@@ -53,14 +56,29 @@ namespace RabbitMQWeb.Watermark.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price,Stock,PictureUrl")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Name,Price,Stock,PictureUrl")] Product product, IFormFile imageFile)
         {
-            if (ModelState.IsValid)
+
+            if (imageFile is { Length:> 0 })
             {
+                if (!ModelState.IsValid) return View(product);
+                
+                var randomImageName = Guid.NewGuid() + Path.GetExtension(imageFile.FileName);
+
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", randomImageName);
+                
+                await using FileStream stream = new(path, FileMode.Create);
+
+                await imageFile.CopyToAsync(stream);
+                
+                _rabbitMqPublisher.Publish(new ProductImageCreatedEvent(){ImageName = randomImageName});
+
+                product.PictureUrl = randomImageName;
+            }
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            
             return View(product);
         }
 
