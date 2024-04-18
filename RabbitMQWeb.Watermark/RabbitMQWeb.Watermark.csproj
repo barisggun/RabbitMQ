@@ -21,11 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\images\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Remove="wwwroot\images\4aa7fb59-2246-4811-9f9e-2f17a95bd3ba.png" />
+      <Folder Include="wwwroot\images\watermarks\" />
     </ItemGroup>
 
 </Project>
